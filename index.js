@@ -13,15 +13,16 @@ if (direction === 'west'){
     x = x-1
 }
 if (direction === 'north'){
-    x = x+1
+    y = y+1
 }
 if (direction === 'east'){
     x = x+1
 }
 if (direction === 'south'){
-    x = x-1
+    y = y-1
 }
-
+character.style.left = x + 'px'
+character.style.bottom = y + 'px'
 
 
 move(newImage('assets/tree.png')).to(200, 450)
